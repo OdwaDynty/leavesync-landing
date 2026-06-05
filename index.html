@@ -1167,6 +1167,21 @@
         flex-direction: column;
         text-align: center;
       }
+
+    
+      /* Contact form: stack on mobile */
+      #contact > div > div {
+        grid-template-columns: 1fr !important;
+        gap: 2rem !important;
+      }
+
+      /* Name row: stack on mobile */
+      #contact form > div:first-child {
+        grid-template-columns: 1fr !important;
+      }
+
+
+
     }
   </style>
 </head>
@@ -1181,11 +1196,13 @@
         LeaveSync
       </a>
 
-      <ul class="nav-links">
+     <ul class="nav-links">
         <li><a href="#features">Features</a></li>
         <li><a href="#how-it-works">How It Works</a></li>
         <li><a href="#pricing">Pricing</a></li>
         <li><a href="#testimonials">Testimonials</a></li>
+        <!-- Contact link added for lead generation -->
+        <li><a href="#contact">Contact</a></li>
       </ul>
 
       <div class="nav-actions">
@@ -1872,12 +1889,16 @@
            class="btn btn-white btn-lg">
           Start Free Trial
         </a>
-        <a href="mailto:podyantyi@gmail.com"
+        
+        <!-- Links to the contact form instead of
+             opening email client directly -->
+        <a href="#contact"
            class="btn btn-lg"
            style="color:white;
                   border: 2px solid rgba(255,255,255,0.4);">
           Talk to Sales
         </a>
+
       </div>
       <p class="cta-note">
         Free plan available · No credit card needed ·
@@ -1885,6 +1906,441 @@
       </p>
     </div>
   </section>
+
+
+<!-- ── CONTACT FORM ────────────────────────────── -->
+  <!-- Powered by Formspree — free tier handles 50     -->
+  <!-- submissions per month. Upgrade if you get more. -->
+  <section style="padding: 5rem 1.5rem; background: white;"
+           id="contact">
+    <div style="max-width: 1200px; margin: 0 auto;">
+
+      <!-- Two column layout: text left, form right -->
+      <div style="
+        display:             grid;
+        grid-template-columns:1fr 1fr;
+        gap:                 4rem;
+        align-items:         center;
+      ">
+
+        <!-- ── Left Column: Info ── -->
+        <div>
+          <!-- Section label pill -->
+          <span class="section-label">Contact Us</span>
+
+          <h2 class="section-title"
+              style="text-align:left; margin-top:0.5rem;">
+            Talk to Our Team
+          </h2>
+
+          <p style="
+            font-size:     1.125rem;
+            color:         #6B7280;
+            margin-bottom: 2rem;
+            line-height:   1.7;
+          ">
+            Have questions about LeaveSync?
+            Want to see a live demo?
+            We will get back to you within
+            1 business day.
+          </p>
+
+          <!-- Contact details list -->
+          <div style="
+            display:       flex;
+            flex-direction:column;
+            gap:           1.25rem;
+          ">
+
+            <!-- Email contact item -->
+            <div style="
+              display:     flex;
+              align-items: flex-start;
+              gap:         1rem;
+            ">
+              <!-- Icon circle -->
+              <div style="
+                width:           48px;
+                height:          48px;
+                background:      #EEF2FF;
+                border-radius:   0.75rem;
+                display:         flex;
+                align-items:     center;
+                justify-content: center;
+                font-size:       1.25rem;
+                flex-shrink:     0;
+              ">📧</div>
+              <div>
+                <p style="
+                  font-weight:   600;
+                  color:         #111827;
+                  margin-bottom: 0.25rem;
+                ">Email Us</p>
+                <!-- Anchor link to the contact form section -->
+                <a href="#contact"
+                   style="
+                     color:     #4F46E5;
+                     font-size: 0.9375rem;
+                   ">
+                  Contact
+                </a>
+
+
+              </div>
+            </div>
+
+            <!-- Response time item -->
+            <div style="
+              display:     flex;
+              align-items: flex-start;
+              gap:         1rem;
+            ">
+              <div style="
+                width:           48px;
+                height:          48px;
+                background:      #D1FAE5;
+                border-radius:   0.75rem;
+                display:         flex;
+                align-items:     center;
+                justify-content: center;
+                font-size:       1.25rem;
+                flex-shrink:     0;
+              ">⏱️</div>
+              <div>
+                <p style="
+                  font-weight:   600;
+                  color:         #111827;
+                  margin-bottom: 0.25rem;
+                ">Response Time</p>
+                <p style="
+                  color:    #6B7280;
+                  font-size:0.9375rem;
+                ">
+                  Within 1 business day
+                </p>
+              </div>
+            </div>
+
+            <!-- Location item -->
+            <div style="
+              display:     flex;
+              align-items: flex-start;
+              gap:         1rem;
+            ">
+              <div style="
+                width:           48px;
+                height:          48px;
+                background:      #FEF3C7;
+                border-radius:   0.75rem;
+                display:         flex;
+                align-items:     center;
+                justify-content: center;
+                font-size:       1.25rem;
+                flex-shrink:     0;
+              ">📍</div>
+              <div>
+                <p style="
+                  font-weight:   600;
+                  color:         #111827;
+                  margin-bottom: 0.25rem;
+                ">Based In</p>
+                <p style="
+                  color:    #6B7280;
+                  font-size:0.9375rem;
+                ">
+                  South Africa 🇿🇦
+                </p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- ── Right Column: Form ── -->
+        <div style="
+          background:    white;
+          border:        1px solid #E5E7EB;
+          border-radius: 1rem;
+          padding:       2.5rem;
+          box-shadow:    0 4px 20px rgba(0,0,0,0.06);
+        ">
+          <h3 style="
+            font-size:     1.25rem;
+            font-weight:   700;
+            color:         #111827;
+            margin-bottom: 1.75rem;
+          ">
+            Send Us a Message
+          </h3>
+
+          <!-- Formspree form -->
+          <!-- Replace xpznwvkb with YOUR Formspree form ID -->
+          <!-- Get yours at https://formspree.io          -->
+          <form
+            id="contact-form"
+            action="https://formspree.io/f/mbdelwkp"
+            method="POST"
+            onsubmit="handleFormSubmit(event)"
+            style="
+              display:       flex;
+              flex-direction:column;
+              gap:           1.25rem;
+            ">
+
+            <!-- Name row: first and last side by side -->
+            <div style="
+              display: grid;
+              grid-template-columns: 1fr 1fr;
+              gap: 1rem;
+            ">
+              <!-- First name field -->
+              <div>
+                <label style="
+                  display:       block;
+                  font-size:     0.875rem;
+                  font-weight:   600;
+                  color:         #374151;
+                  margin-bottom: 0.375rem;
+                ">
+                  First Name *
+                </label>
+                <input
+                  type="text"
+                  name="first_name"
+                  placeholder="Thabo"
+                  required
+                  style="
+                    width:         100%;
+                    padding:       0.75rem 1rem;
+                    border:        1px solid #E5E7EB;
+                    border-radius: 0.625rem;
+                    font-size:     0.9375rem;
+                    font-family:   inherit;
+                    outline:       none;
+                    transition:    border-color 0.15s;
+                  "
+                  onfocus="this.style.borderColor='#4F46E5'"
+                  onblur="this.style.borderColor='#E5E7EB'"
+                />
+              </div>
+
+              <!-- Last name field -->
+              <div>
+                <label style="
+                  display:       block;
+                  font-size:     0.875rem;
+                  font-weight:   600;
+                  color:         #374151;
+                  margin-bottom: 0.375rem;
+                ">
+                  Last Name *
+                </label>
+                <input
+                  type="text"
+                  name="last_name"
+                  placeholder="Nkosi"
+                  required
+                  style="
+                    width:         100%;
+                    padding:       0.75rem 1rem;
+                    border:        1px solid #E5E7EB;
+                    border-radius: 0.625rem;
+                    font-size:     0.9375rem;
+                    font-family:   inherit;
+                    outline:       none;
+                    transition:    border-color 0.15s;
+                  "
+                  onfocus="this.style.borderColor='#4F46E5'"
+                  onblur="this.style.borderColor='#E5E7EB'"
+                />
+              </div>
+            </div>
+
+            <!-- Work email field -->
+            <div>
+              <label style="
+                display:       block;
+                font-size:     0.875rem;
+                font-weight:   600;
+                color:         #374151;
+                margin-bottom: 0.375rem;
+              ">
+                Work Email *
+              </label>
+              <input
+                type="email"
+                name="email"
+                placeholder="thabo@company.co.za"
+                required
+                style="
+                  width:         100%;
+                  padding:       0.75rem 1rem;
+                  border:        1px solid #E5E7EB;
+                  border-radius: 0.625rem;
+                  font-size:     0.9375rem;
+                  font-family:   inherit;
+                  outline:       none;
+                  transition:    border-color 0.15s;
+                "
+                onfocus="this.style.borderColor='#4F46E5'"
+                onblur="this.style.borderColor='#E5E7EB'"
+              />
+            </div>
+
+            <!-- Company name field -->
+            <div>
+              <label style="
+                display:       block;
+                font-size:     0.875rem;
+                font-weight:   600;
+                color:         #374151;
+                margin-bottom: 0.375rem;
+              ">
+                Company Name
+              </label>
+              <input
+                type="text"
+                name="company"
+                placeholder="Makoya Retail (Pty) Ltd"
+                style="
+                  width:         100%;
+                  padding:       0.75rem 1rem;
+                  border:        1px solid #E5E7EB;
+                  border-radius: 0.625rem;
+                  font-size:     0.9375rem;
+                  font-family:   inherit;
+                  outline:       none;
+                  transition:    border-color 0.15s;
+                "
+                onfocus="this.style.borderColor='#4F46E5'"
+                onblur="this.style.borderColor='#E5E7EB'"
+              />
+            </div>
+
+            <!-- Number of employees dropdown -->
+            <div>
+              <label style="
+                display:       block;
+                font-size:     0.875rem;
+                font-weight:   600;
+                color:         #374151;
+                margin-bottom: 0.375rem;
+              ">
+                Number of Employees
+              </label>
+              <select
+                name="employees"
+                style="
+                  width:         100%;
+                  padding:       0.75rem 1rem;
+                  border:        1px solid #E5E7EB;
+                  border-radius: 0.625rem;
+                  font-size:     0.9375rem;
+                  font-family:   inherit;
+                  outline:       none;
+                  background:    white;
+                  cursor:        pointer;
+                "
+              >
+                <option value="">Select range...</option>
+                <option value="1-5">1 – 5 employees</option>
+                <option value="6-25">6 – 25 employees</option>
+                <option value="26-100">
+                  26 – 100 employees
+                </option>
+                <option value="100+">
+                  More than 100 employees
+                </option>
+              </select>
+            </div>
+
+            <!-- Message textarea -->
+            <div>
+              <label style="
+                display:       block;
+                font-size:     0.875rem;
+                font-weight:   600;
+                color:         #374151;
+                margin-bottom: 0.375rem;
+              ">
+                Message *
+              </label>
+              <textarea
+                name="message"
+                placeholder="Tell us about your company and what you need..."
+                rows="4"
+                required
+                style="
+                  width:         100%;
+                  padding:       0.75rem 1rem;
+                  border:        1px solid #E5E7EB;
+                  border-radius: 0.625rem;
+                  font-size:     0.9375rem;
+                  font-family:   inherit;
+                  outline:       none;
+                  resize:        vertical;
+                  transition:    border-color 0.15s;
+                "
+                onfocus="this.style.borderColor='#4F46E5'"
+                onblur="this.style.borderColor='#E5E7EB'"
+              ></textarea>
+            </div>
+
+            <!-- Submit button -->
+            <button
+              type="submit"
+              id="submit-btn"
+              class="btn btn-primary"
+              style="width:100%; padding:1rem;"
+            >
+              Send Message
+            </button>
+
+            <!-- Success message — hidden by default -->
+            <!-- Shown after form submits successfully -->
+            <div
+              id="form-success"
+              style="
+                display:       none;
+                background:    #D1FAE5;
+                border:        1px solid #6EE7B7;
+                border-radius: 0.625rem;
+                padding:       1rem 1.25rem;
+                text-align:    center;
+                color:         #065F46;
+                font-weight:   600;
+              "
+            >
+              ✅ Message sent! We will be in touch
+              within 1 business day.
+            </div>
+
+            <!-- Error message — hidden by default -->
+            <div
+              id="form-error"
+              style="
+                display:       none;
+                background:    #FEE2E2;
+                border:        1px solid #FECACA;
+                border-radius: 0.625rem;
+                padding:       1rem 1.25rem;
+                text-align:    center;
+                color:         #991B1B;
+                font-weight:   600;
+              "
+            >
+              ❌ Failed to send. Please email us
+              directly at
+              odwa@digitskillsolutions.co.za
+            </div>
+
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
 
   <!-- ── FOOTER ──────────────────────────────────── -->
   <footer>
@@ -1924,12 +2380,13 @@
 
       <div>
         <div class="footer-col-title">Company</div>
+        
         <ul class="footer-links">
+          <!-- Links to contact form section -->
           <li>
-            <a href="mailto:podyantyi@gmail.com">
-              Contact Us
-            </a>
+            <a href="#contact">Contact Us</a>
           </li>
+
           <li><a href="#testimonials">Testimonials</a></li>
         </ul>
       </div>
@@ -1993,6 +2450,82 @@
           }
         });
       });
+
+
+    // ── Contact Form Submit Handler ─────────────────
+    // Handles the Formspree form submission
+    // Shows success or error message without page reload
+    async function handleFormSubmit(event) {
+      // Prevent the default form submission
+      // which would reload the page
+      event.preventDefault();
+
+      // Get references to UI elements
+      const form       = document.getElementById(
+        'contact-form'
+      );
+      const submitBtn  = document.getElementById(
+        'submit-btn'
+      );
+      const successMsg = document.getElementById(
+        'form-success'
+      );
+      const errorMsg   = document.getElementById(
+        'form-error'
+      );
+
+      // Hide any previous messages
+      successMsg.style.display = 'none';
+      errorMsg.style.display   = 'none';
+
+      // Show loading state on the button
+      submitBtn.disabled    = true;
+      submitBtn.textContent = 'Sending...';
+
+      try {
+        // Submit the form data to Formspree
+        // using the Fetch API (no page reload)
+        const response = await fetch(form.action, {
+          method:  'POST',
+          body:    new FormData(form),
+          headers: {
+            // Tell Formspree to return JSON
+            // so we can handle the response in JS
+            'Accept': 'application/json',
+          },
+        });
+
+        if (response.ok) {
+          // Success — show success message
+          // and reset the form fields
+          successMsg.style.display = 'block';
+          form.reset();
+
+          // Scroll success message into view
+          successMsg.scrollIntoView({
+            behavior: 'smooth',
+            block:    'nearest',
+          });
+        } else {
+          // Formspree returned an error
+          // Show the error message
+          errorMsg.style.display = 'block';
+        }
+
+      } catch (networkError) {
+        // Network error (offline, DNS failure etc.)
+        // Show the error message with direct email
+        console.error(
+          'Form submission failed:', networkError
+        );
+        errorMsg.style.display = 'block';
+      }
+
+      // Always restore the button to its original state
+      // whether submission succeeded or failed
+      submitBtn.disabled    = false;
+      submitBtn.textContent = 'Send Message';
+    }
 
     // ── Navbar shadow on scroll ─────────────────────
     window.addEventListener('scroll', () => {
