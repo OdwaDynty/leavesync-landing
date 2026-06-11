@@ -11,6 +11,7 @@
     {"src": "/terms",   "dest": "/terms.html" },
     {"src": "/popia",   "dest": "/popia.html" },
     { "src": "/dpa",      "dest": "/dpa.html" },
+    { "src": "/security", "dest": "/security.html" },
     {"src": "/(.*)",    "dest": "/$1" }
   ]
 }
