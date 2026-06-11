@@ -7,21 +7,10 @@
     }
   ],
   "routes": [
-    {
-      "src": "/privacy",
-      "dest": "/privacy.html"
-    },
-    {
-      "src": "/terms",
-      "dest": "/terms.html"
-    },
-    {
-      "src": "/popia",
-      "dest": "/popia.html"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/$1"
-    }
+    {"src": "/privacy", "dest": "/privacy.html" },
+    {"src": "/terms",   "dest": "/terms.html" },
+    {"src": "/popia",   "dest": "/popia.html" },
+    { "src": "/dpa",      "dest": "/dpa.html" },
+    {"src": "/(.*)",    "dest": "/$1" }
   ]
 }
